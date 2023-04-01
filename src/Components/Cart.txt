@@ -1,0 +1,20 @@
+ <Container>
+       <Row>
+         <Col md={4}>
+            <img src={product.image} alt={product.title} />
+         </Col>
+         <Col md={4}>
+
+            <h3>{product.title}</h3>
+            <p  className='lead fw-bold'>
+                {product.qty}x ₹{Math.floor(product.price * 82.66)} =  ₹ {product.qty * Math.floor(product.price * 82.66)}
+            </p>
+            {/* <Button variant="outline-dark" onClick={() =>handleButton(product)}>
+                <i className='fa fa-minus'></i>
+            </Button>
+            <Button variant="outline-dark" onClick={() =>handleButton(product)}>
+            <i className='fa fa-plus'></i>
+            </Button> */}
+         </Col>
+       </Row>
+    </Container>

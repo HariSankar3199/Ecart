@@ -1,0 +1,23 @@
+from Product.jsx 97 we call button addCart(which is a state)
+its eventhandler calls a function conataining redux dispatch action 
+
+***ReduxFlow***
+redux
+   ->action
+       -->index.js ->define two fn to handlecart
+   ->reducer
+       -->index.js ->combine reducers & import handlecart.js
+       -->handleCart.js -> reducer fn containing state and action
+   ->store.js //from index.js of reducer
+
+   1// We use redux to add product to cart
+   2// In action we tell them what we want to do
+   3// In Reducer we tell how it works 
+   4// Now add them in root reducers
+   5// Create store
+   6// import them in Index.js (we did in App.js) and Integrate them
+   7// call them in product .js by handling addCart
+   8//Showing number of item  in cartbutton(addCart)->Cartbuttonpage(Navbar button)
+   9// Create cart component
+   
+
